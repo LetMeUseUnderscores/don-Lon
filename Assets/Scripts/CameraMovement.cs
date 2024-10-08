@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public Transform mainCamera;
-    public Transform player;
+    public Transform target;
     public float yOffset = 5f;
+    public float xOffset = 5f;
     void Update()
     {
-        mainCamera.position = new Vector3(player.position.x, player.position.y + yOffset, mainCamera.position.z);
+        transform.position = new Vector3(target.position.x + xOffset, target.position.y + yOffset, transform.position.z);
     }
 }
