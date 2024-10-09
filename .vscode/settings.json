@@ -56,6 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "London.sln",
+    "dotnet.defaultSolution": "don-Lon.sln",
     "git.ignoreLimitWarning": true
 }
