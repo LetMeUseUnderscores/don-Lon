@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * xVelocity, rb.linearVelocityY);
 
-        if (isGrounded && Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) { 
+        if (isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))) { 
             rb.linearVelocity = new Vector2(rb.linearVelocityX, yVelocity);
         }
         isGrounded = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.down, raycastLength, LayerMask.GetMask("Ground"));
