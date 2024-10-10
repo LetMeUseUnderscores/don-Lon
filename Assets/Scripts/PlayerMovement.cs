@@ -15,7 +15,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {  
+        if(transform.position.y < -32) {
+            this.Die();
+        }
         float moveInput = Input.GetAxis("Horizontal");
+        transform.rotation = Quaternion.identity;
         if (moveInput > 0)
         {
             transform.localScale = new Vector3(1, 1, 1); // Facing right
@@ -36,9 +40,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Death"))
         {
-            Debug.Log("death");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            this.Die();
         }
+    }
+
+    void Die() {
+        Debug.Log("death");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
 }
