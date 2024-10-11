@@ -25,6 +25,11 @@ public class Shanker : MonoBehaviour
         }
         if(beginMovement)
         {
+            if(playerPosition.position.x > transform.position.x && isEnemy) {
+                transform.localScale = new Vector3(1, 1, 1);
+            } else {    
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
             transform.Translate(moveSpeed * Time.deltaTime * Vector2.left);
             if(!isEnemy && transform.position.x < playerPosition.position.x - attackDistance)
             {
@@ -51,5 +56,6 @@ public class Shanker : MonoBehaviour
                 enabled = false;    
             }
         }
+
     }
 }

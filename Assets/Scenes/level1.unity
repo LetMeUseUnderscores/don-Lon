@@ -373,6 +373,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 283029706}
   playerCollider: {fileID: 283029708}
+  chasePosition: {fileID: 0}
+  chaseDeathOffset: 5
   xVelocity: 6
   yVelocity: 6
   raycastLength: 0.81
