@@ -4,9 +4,9 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public BoxCollider2D playerCollider;
-    public float xVelocity = 5f;
-    public float yVelocity = 5f;
-    public float raycastLength = 0.5f;
+    public float xVelocity = 6f;
+    public float yVelocity = 6f;
+    public float raycastLength = 0.81f;
     public bool isGrounded = true;
     void Start()
     {
@@ -30,10 +30,11 @@ public class PlayerMovement : MonoBehaviour
         }
         rb.linearVelocity = new Vector2(moveInput * xVelocity, rb.linearVelocityY);
 
-        if (isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))) { 
+        isGrounded = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.down, raycastLength, LayerMask.GetMask("Ground"));
+
+        if (isGrounded && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space))) { 
             rb.linearVelocity = new Vector2(rb.linearVelocityX, yVelocity);
         }
-        isGrounded = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.down, raycastLength, LayerMask.GetMask("Ground"));
     }
 
     void OnCollisionEnter2D(Collision2D collision)
