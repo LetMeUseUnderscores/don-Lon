@@ -6,9 +6,9 @@ public class PlayerMovement : MonoBehaviour
     public Collider2D playerCollider;
     public Transform chasePosition;
     public float chaseDeathOffset = 5f;
-    public float xVelocity = 5f;
-    public float yVelocity = 5f;
-    public float raycastLength = 0.5f;
+    public float xVelocity = 6f;
+    public float yVelocity = 6f;
+    public float raycastLength = 0.85f;
     public bool isGrounded = true;
     void Start()
     {
@@ -54,5 +54,4 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("death");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    
 }
