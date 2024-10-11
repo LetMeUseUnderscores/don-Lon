@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public BoxCollider2D playerCollider;
+    public Collider2D playerCollider;
     public Transform chasePosition;
     public float chaseDeathOffset = 5f;
     public float xVelocity = 5f;
