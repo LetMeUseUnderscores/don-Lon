@@ -406,7 +406,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 6}
-  m_LocalScale: {x: 9, y: 9, z: 1}
+  m_LocalScale: {x: 12, y: 9.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 519420032}
@@ -961,7 +961,7 @@ GameObject:
   - component: {fileID: 1025075692}
   - component: {fileID: 1025075691}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Depression
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -984,7 +984,7 @@ MonoBehaviour:
   speedMultiplier: 5
   speed: 1
   bobSpeed: 1
-  amplitude: 2
+  amplitude: 0.2
   yPosition: 5
 --- !u!212 &1025075692
 SpriteRenderer:
@@ -1050,8 +1050,8 @@ Transform:
   m_GameObject: {fileID: 1025075690}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23, y: 6.1, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: -23, y: 2.1, z: 0}
+  m_LocalScale: {x: 25, y: 25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1224,7 +1224,7 @@ Transform:
   m_GameObject: {fileID: 1423466844}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.6242, y: -2.97, z: -1}
+  m_LocalPosition: {x: 249.5, y: -2.97, z: -1}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1269,12 +1269,12 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 50, y: 0.75}
+    newSize: {x: 150, y: 0.75}
     adaptiveTilingThreshold: 0
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 50, y: 0.75}
+  m_Size: {x: 150, y: 0.75}
   m_EdgeRadius: 0
 --- !u!212 &1423466847
 SpriteRenderer:
@@ -1325,7 +1325,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 50, y: 0.75}
+  m_Size: {x: 150, y: 0.75}
   m_AdaptiveModeThreshold: 0
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
