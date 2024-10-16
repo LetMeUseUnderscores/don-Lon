@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7500275786185714778}
   - component: {fileID: 2757484148061988050}
   - component: {fileID: 6153393467565779659}
+  - component: {fileID: 6319932704769380195}
   m_Layer: 0
   m_Name: Shanker
   m_TagString: Death
@@ -166,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d4cba61bd3b1e4e89e9e10272285ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 6319932704769380195}
   playerPosition: {fileID: 0}
   playerCollider: {fileID: 0}
   moveSpeed: 1
@@ -174,3 +176,25 @@ MonoBehaviour:
   attackDistance: 5
   movementStartDistance: 15
   isEnemy: 0
+--- !u!95 &6319932704769380195
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3260177674111633047}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 78a143355c566a747b5645c98fac59c0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

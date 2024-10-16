@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Shanker : MonoBehaviour
 {
+    public Animator animator;
     public Transform playerPosition;
     public Collider2D playerCollider;
     public float moveSpeed = 1f;
@@ -15,6 +16,8 @@ public class Shanker : MonoBehaviour
     public bool isEnemy = false;    
     void Start() {
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), playerCollider, true);
+        animator.SetBool("isHostile", false);
+        animator.SetBool("isDead", false);
     }
     bool beginMovement = false;
     void Update()
@@ -36,6 +39,7 @@ public class Shanker : MonoBehaviour
                 if(UnityEngine.Random.value < attackChance)
                 {
                     isEnemy = true;
+                    animator.SetBool("isHostile", true);
                 }
             }
 
@@ -62,7 +66,7 @@ public class Shanker : MonoBehaviour
                     ShankerDeath();
                 }
             } else {
-                if(collision.gameObject.transform.position.x     < transform.position.x) {
+                if(collision.gameObject.transform.position.x < transform.position.x) {
                     ShankerDeath();
                 }
             }
@@ -70,6 +74,8 @@ public class Shanker : MonoBehaviour
     }
     
     void ShankerDeath() {
+        animator.SetBool("isDead", true);
+        animator.enabled = false;
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), playerCollider, false);
         transform.gameObject.layer = 3;
         transform.gameObject.tag = "Ground";

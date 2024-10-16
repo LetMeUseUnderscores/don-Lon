@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2ccf8a7bbee8939498e20f8cd7cb4192
+guid: c99e093bf2a721144b667b5ed8c0c355
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2850642406006309715
-    second: shanker_knife_0
+      213: -5289183048015396567
+    second: player-walk-2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shanker_knife_0
+      name: player-walk-2_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 8
+        x: 16
+        y: 7
         width: 17
-        height: 34
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 353cba73a248f8720800000000000000
-      internalID: 2850642406006309715
+      spriteID: 92146078a0c0996b0800000000000000
+      internalID: -5289183048015396567
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7ef6297b1787cec4f8cf6ac31eb48800
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shanker_knife_0: 2850642406006309715
+      player-walk-2_0: -5289183048015396567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

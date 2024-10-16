@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
+    public Animator animator;
     public Rigidbody2D rb;
     public Collider2D playerCollider;
     public Transform chasePosition;
@@ -21,13 +22,19 @@ public class PlayerMovement : MonoBehaviour
             Die();
         }
         float moveInput = Input.GetAxis("Horizontal");
+        if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) 
+            || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
+            animator.SetBool("isRunning", true);    
+        } else{
+            animator.SetBool("isRunning", false);
+        }
         if (moveInput > 0)
         {
-            transform.localScale = new Vector3(1, 1, 1); // Facing right
+            transform.localScale = new Vector3(0.8f, 0.8f, 1); // Facing right
         }
         else if (moveInput < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1); // Facing left
+            transform.localScale = new Vector3(-0.8f, 0.8f, 1); // Facing left
         }
         rb.linearVelocity = new Vector2(moveInput * xVelocity, rb.linearVelocityY);
 

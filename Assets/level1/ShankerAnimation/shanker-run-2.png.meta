@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2ccf8a7bbee8939498e20f8cd7cb4192
+guid: 8a15805c6b5bc0842a8b2cb9e7097c97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2850642406006309715
-    second: shanker_knife_0
+      213: 3007001459832537555
+    second: shanker-run-2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shanker_knife_0
+      name: shanker-run-2_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 8
-        width: 17
-        height: 34
+        x: 16
+        y: 7
+        width: 22
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 353cba73a248f8720800000000000000
-      internalID: 2850642406006309715
+      spriteID: 3d1466c55e30bb920800000000000000
+      internalID: 3007001459832537555
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7ef6297b1787cec4f8cf6ac31eb48800
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shanker_knife_0: 2850642406006309715
+      shanker-run-2_0: 3007001459832537555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
