@@ -58,24 +58,25 @@ public class PlayerMovement : MonoBehaviour
         } 
         else if (collision.gameObject.CompareTag("ChangeLevel"))
         {
-            Debug.Log("change level");
-            switch (SceneManager.GetActiveScene().name) {
-                case "level1":
-                    SceneManager.LoadScene("level2");
-                    break;
-                case "level2":
-                    SceneManager.LoadScene("level3");
-                    break;
-                case "level3":
-                    SceneManager.LoadScene("level4");
-                    break;
-                default:
-                    SceneManager.LoadScene("level1");
-                    break;
-            }
+            LoadNextLevel();
         }
     }
+    void LoadNextLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
 
+        // Check if the next scene index exceeds the number of scenes in the build settings
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.Log("No more levels to load, loading first level.");
+            SceneManager.LoadScene(0); // Loop back to the first scene
+        }
+    }
     void Die() {
         Debug.Log("death");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
