@@ -1,3 +1,5 @@
+using System;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
@@ -19,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {  
         if(transform.position.y < -8) {
-            Die();
+            Die();  
         }
         float moveInput = Input.GetAxis("Horizontal");
         if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) 
@@ -43,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space))) { 
             rb.linearVelocity = new Vector2(rb.linearVelocityX, yVelocity);
         }
-        isGrounded = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.down, raycastLength, LayerMask.GetMask("Ground"));
         if(chasePosition.position.x + chaseDeathOffset >= transform.position.x) {
             Die();
         }
@@ -54,6 +55,24 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Death"))
         {
             Die();
+        } 
+        else if (collision.gameObject.CompareTag("ChangeLevel"))
+        {
+            Debug.Log("change level");
+            switch (SceneManager.GetActiveScene().name) {
+                case "level1":
+                    SceneManager.LoadScene("level2");
+                    break;
+                case "level2":
+                    SceneManager.LoadScene("level3");
+                    break;
+                case "level3":
+                    SceneManager.LoadScene("level4");
+                    break;
+                default:
+                    SceneManager.LoadScene("level1");
+                    break;
+            }
         }
     }
 

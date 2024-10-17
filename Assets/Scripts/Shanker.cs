@@ -13,6 +13,7 @@ public class Shanker : MonoBehaviour
     public float attackChance = 0.01f;
     public float attackDistance = 5f;
     public float movementStartDistance = 20f;
+    public bool attackOnSight = false;
     public bool isEnemy = false;    
     void Start() {
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), playerCollider, true);
@@ -34,7 +35,7 @@ public class Shanker : MonoBehaviour
                 transform.localScale = new Vector3(-0.8f, 0.8f, 1);
             }
             transform.Translate(moveSpeed * Time.deltaTime * Vector2.left);
-            if(!isEnemy && transform.position.x < playerPosition.position.x - attackDistance)
+            if(attackOnSight || (!isEnemy && transform.position.x < playerPosition.position.x - attackDistance))
             {
                 if(UnityEngine.Random.value < attackChance)
                 {

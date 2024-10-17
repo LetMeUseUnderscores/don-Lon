@@ -147,5 +147,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63ca49d34972b24aa1345c53e428a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  hitbox: {fileID: 0}
+  sprite: {fileID: 2256323100845646558}
+  hitbox: {fileID: 5167725565345052289}
