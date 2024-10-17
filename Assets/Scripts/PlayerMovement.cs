@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {  
-        if(transform.position.y < -32) {
+        if(transform.position.y < -8) {
             Die();
         }
         float moveInput = Input.GetAxis("Horizontal");

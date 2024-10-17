@@ -1148,7 +1148,7 @@ MonoBehaviour:
   rb: {fileID: 283029706}
   playerCollider: {fileID: 283029708}
   chasePosition: {fileID: 1025075693}
-  chaseDeathOffset: 5
+  chaseDeathOffset: 3
   xVelocity: 6
   yVelocity: 6
   raycastLength: 0.85
@@ -2078,7 +2078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPosition: {fileID: 283029705}
   distance: 15
-  speedMultiplier: 5
+  speedMultiplier: 6
   speed: 1
   bobSpeed: 1
   amplitude: 0.2
@@ -2604,8 +2604,8 @@ Transform:
   m_GameObject: {fileID: 1832078832}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.63, y: -3.46, z: 0}
-  m_LocalScale: {x: -10.697341, y: 9.099735, z: 1}
+  m_LocalPosition: {x: 10.63, y: -3.92, z: 0}
+  m_LocalScale: {x: -12, y: 12, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1241858802}
