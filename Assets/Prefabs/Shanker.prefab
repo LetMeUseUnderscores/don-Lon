@@ -175,6 +175,7 @@ MonoBehaviour:
   attackChance: 0.03
   attackDistance: 5
   movementStartDistance: 15
+  attackOnSight: 0
   isEnemy: 0
 --- !u!95 &6319932704769380195
 Animator:
