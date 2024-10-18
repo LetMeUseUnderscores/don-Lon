@@ -7,6 +7,7 @@ public class Shanker : MonoBehaviour
 {
     public Animator animator;
     public Transform playerPosition;
+    public AudioSource scream;
     public Collider2D playerCollider;
     public float moveSpeed = 1f;
     public float shankSpeed = 4f;
@@ -39,7 +40,9 @@ public class Shanker : MonoBehaviour
             {
                 if(UnityEngine.Random.value < attackChance)
                 {
+                    attackOnSight = false;
                     isEnemy = true;
+                    scream.Play();
                     animator.SetBool("isHostile", true);
                 }
             }
