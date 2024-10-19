@@ -412,7 +412,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8754b5cc4c6e81c4f9d4fbf4b46de543, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 8754b5cc4c6e81c4f9d4fbf4b46de543, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -509,7 +509,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5d3f6a800360a714db48928619f01283, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 5d3f6a800360a714db48928619f01283, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -606,7 +606,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6229bf7655870b74d8fba3a8a835b75f, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 6229bf7655870b74d8fba3a8a835b75f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -703,7 +703,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5025c3fb4e6b2214f9642c61650bcfeb, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 5025c3fb4e6b2214f9642c61650bcfeb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -800,7 +800,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f3b2cfbebecf5694cb43be8cfc20b3ed, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: f3b2cfbebecf5694cb43be8cfc20b3ed, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -915,9 +915,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3738e31e93953b54ea949db9f6df718a, type: 3}
-  m_Resource: {fileID: 8300000, guid: 3738e31e93953b54ea949db9f6df718a, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 3a93d1f6323ab4a45846dc714319cbcc, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3a93d1f6323ab4a45846dc714319cbcc, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
