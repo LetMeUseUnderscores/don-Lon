@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd996524d7bc2ab488e1985bd5ac2d8a
+guid: c0399bf3b16d422488d8a551458586ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4700355189381599403
-    second: sand_original_0
+      213: 7899806025320332981
+    second: titlescreenBackground_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sand_original_0
+      name: titlescreenBackground_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 879
+        height: 534
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55feebadbdbf4ceb0800000000000000
-      internalID: -4700355189381599403
+      spriteID: 5be75bd99bfb1ad60800000000000000
+      internalID: 7899806025320332981
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      sand_original_0: -4700355189381599403
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
